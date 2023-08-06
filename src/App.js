@@ -5,7 +5,7 @@ import { useState } from "react";
 function App() {
 
   //create our state to hold the jservice data
-  const [question, setQuestion] = useState({})
+  const [question, setQuestion] = useState([{}])
   //question is passed down to display as a prop
 
   return (
