@@ -17,11 +17,11 @@ function Score(props) {
 
   return (
     <div className="App-header">
-      <h2>Score: {score}</h2>
+      <h2><span id='scoreName'>Score:</span> <span id='scoreAmount'>{score}</span></h2>
       <div className="buttons-container">
-        <button className="score-button" onClick={addPoints}>Add 100 Points</button>
-        <button className="score-button" onClick={subtractPoints}>Subtract 100 Points</button>
-        <button className="reset-button" onClick={resetScore}>Reset</button>
+        <button className="addButton" onClick={addPoints}>Increase</button>
+        <button className="subtractButton" onClick={subtractPoints}>Decrease</button>
+        <button className="resetButton" onClick={resetScore}>Reset</button>
       </div>
     </div>
   );

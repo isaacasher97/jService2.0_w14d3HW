@@ -10,17 +10,17 @@ function Display(props) {
 
   if (props.question[0].question) {
     return (
-      <div>
-        <h1><span>Category:</span> {question.category.title}</h1>
-        <h1><span>Points:</span> {question.value}</h1>
-        <h2><span>Question:</span> {question.question}</h2>
-        <button onClick={toggleAnswer}>
-          {showAnswer ? 'Hide Answer' : 'Show Answer'}
+      <div className='displayContainer'>
+        <h1><span className='category'>Category:</span> <span className='categoryAnswer'>{question.category.title}</span></h1>
+        <h1><span className='pointsName'>Points:</span> <span className='pointsAmount'>{question.value}</span></h1>
+        <h2><span className='questionName'>Question:</span> <span className='questionAnswer'>{question.question}</span></h2>
+        <button className='answerButton' onClick={toggleAnswer}>
+          {showAnswer ? 'Hide Answer' : 'Click To Reveal Answer'}
         </button>
         {showAnswer && (
-          <div>
-            <h3>Answer:</h3>
-            <p>{question.answer}</p>
+          <div className='answerContainer'>
+            <h3><span className='shownAnswer'>Answer:</span> <span className='shownAnswerDefined'>{question.answer}</span></h3>
+            
           </div>
         )}
       </div>

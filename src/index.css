@@ -13,6 +13,10 @@ code {
     monospace;
 }
 
+h1, h2, h3{
+  text-align: center;
+}
+
 .App {
   display: flex;
   flex-direction: column;
@@ -21,12 +25,123 @@ code {
   justify-content: center;
 }
 
-h2 {
-  text-align: center;
-}
-
 .topHeading {
   color: #F7F7FF;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 60px;
+  text-align: center;
+}
+
+#scoreName {
+  color: #EAD27A;
+  font-size: 1.75em;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#scoreAmount {
+  color: #F7F7FF;
+  font-size: 1.5em;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.addButton {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #6191B5;
+}
+
+.subtractButton {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #FE938C;
+}
+
+.resetButton {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #E71D37;
+}
+
+.letsPlay {
+  color: #EAD27A;
+  font-size: 2em;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+form > input {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #EAD27A;
+}
+
+.displayContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.category {
+  color: #EAD27A;
+  font-size: 1.3em;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.categoryAnswer {
+  color: #F7F7FF;
+  font-size: 1em;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.pointsName {
+  color: #EAD27A;
+  font-size: 1.3em;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.pointsAmount {
+  color: #F7F7FF;
+  font-size: 1em;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.questionName {
+  color: #EAD27A;
+  font-size: 1.3em;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+.questionAnswer {
+  color: #F7F7FF;
+  font-size: 1em;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.answerButton {
+  padding: 20px;
+  width: 250px;
+  background-color: #1A2650;
+  color: #F7F7FF;
+  font-size: 1em;
+  font-weight: 900;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.shownAnswer {
+  color: #EAD27A;
+  font-size: 1.75em;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.shownAnswerDefined {
+  color: #F7F7FF;
+  font-size: 1.5em;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-transform: capitalize;
 }

@@ -27,7 +27,7 @@ function ControlledForm(props) {
  
 
     return <div className="form">
-        <h2>Let's Play!</h2>
+        <h2 className="letsPlay">Let's Play!</h2>
         <form onSubmit={handleSubmit}>
             <input type="submit" value={"Get Question"}/>
         </form>
