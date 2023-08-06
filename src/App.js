@@ -1,6 +1,8 @@
 import Display from "./components/Display";
 import ControlledForm from "./components/ControlledForm";
 import { useState } from "react";
+import Score from "./components/Score";
+import "./index.css"
 
 function App() {
 
@@ -10,7 +12,8 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Welcome To Jeapordy!</h1>
+      <h1 className="topHeading">Welcome To Jeapordy!</h1>
+      <Score/>
       <ControlledForm setQuestion={setQuestion}/>
       <Display question={question}/>
     </div>
